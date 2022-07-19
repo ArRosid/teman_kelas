@@ -1,0 +1,124 @@
+* {
+    transition: 300ms;
+}
+
+.h-fit {
+    height: fit-content;
+}
+.w-fit {
+    width: fit-content;
+}
+
+.content {
+    background: #e9edf0;
+    min-height: 100vh;
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    .card-list {
+        .card {
+            border: none;
+            border-radius: 12px;
+            flex-direction: row;
+            padding: 14px;
+            img {
+                border: 1px solid #eee;
+                border-radius: 100px;
+                height: 120px;
+                margin: auto;
+                margin-left: 24px;
+                object-fit: cover;
+                object-position: center center;
+                width: 120px;
+            }
+            &-text {
+                line-height: 18px;
+                margin-bottom: 2px;
+                span {
+                    font-size: 12px;
+                    opacity: 0.7;
+                }
+            }
+            .btn-delete {
+                background: rgba(220, 20, 60, 0.1);
+                border-radius: 50px;
+                color: crimson;
+                display: flex;
+                font-size: 20px;
+                justify-content: center;
+                padding: 6px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                width: 42px;
+                &:hover {
+                    background: rgba(220, 20, 60, 0.2);
+                }
+            }
+        }
+    }
+    .confirm-delete {
+        display: flex;
+        min-height: 100vh;
+        &-form {
+            align-self: center;
+            background: #fff;
+            border-radius: 12px;
+            margin: auto;
+            padding: 60px;
+            width: fit-content;
+            h1 {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
+    .add-friend {
+        display: flex;
+        min-height: 100vh;
+        .back-link {
+            color: #333;
+            display: block;
+            font-weight: 500;
+            opacity: 0.9;
+            text-decoration: none;
+            width: fit-content;
+            &:hover {
+                i {
+                    margin-right: 3px;
+                }
+            }
+            i {
+                margin-right: 8px;
+                font-size: 20px;
+            }
+        }
+        &-form {
+            background: #fff;
+            border-radius: 12px;
+            margin: auto;
+            padding: 40px 60px;
+            width: fit-content;
+            h1 {
+                font-size: 1.5rem !important;
+                text-align: center;
+            }
+            label {
+                display: block;
+                margin-bottom: 4px;
+            }
+            input,
+            textarea {
+                border: 1px solid #adb2c0;
+                border-radius: 8px;
+                max-height: 140px;
+                padding: 10px 16px;
+                width: 100%;
+                &:focus {
+                    background: #f7f9ff;
+                    border: 1px solid #a2a9bd;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
