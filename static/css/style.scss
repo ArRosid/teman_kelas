@@ -1,6 +1,13 @@
+.h-fit {
+    height: fit-content;
+}
+
 .content {
     background: #e9edf0;
     min-height: 100vh;
+    h1 {
+        font-size: 2rem !important;
+    }
     .card-list {
         .card {
             border: none;
