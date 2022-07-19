@@ -1,8 +1,18 @@
-<form method="post">{% csrf_token %}
+{% extends "./base.html" %} {% block content %}
 
-    <p>Yakin pengen hapus "{{ object }}"?</p>
-    
-        <input type="submit" value="Confirm">
+<div class="confirm-delete">
+    <form method="post" class="confirm-delete-form">
+        {% csrf_token %}
+
+        <h1>Yakin pengen hapus "{{ object }}"?</h1>
+
+        <div class="d-flex gap-3 mt-5">
+            <button type="submit" class="btn btn-lg btn-danger col">
+                Ya, Hapus
+            </button>
+            <a href="/" class="btn btn-lg btn-secondary col">Batalkan</a>
+        </div>
     </form>
-    
-    
+</div>
+
+{% endblock %}

@@ -50,4 +50,19 @@
             }
         }
     }
+    .confirm-delete {
+        display: flex;
+        min-height: 100vh;
+        &-form {
+            align-self: center;
+            background: #fff;
+            border-radius: 12px;
+            margin: auto;
+            padding: 60px;
+            width: fit-content;
+            h1 {
+                font-size: 1.5rem !important;
+            }
+        }
+    }
 }

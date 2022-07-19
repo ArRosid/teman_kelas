@@ -67,4 +67,28 @@
 .content .card-list .card .btn-delete:hover {
   background: rgba(220, 20, 60, 0.2);
 }
+
+.content .confirm-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.content .confirm-delete-form {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: #fff;
+  border-radius: 12px;
+  margin: auto;
+  padding: 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.content .confirm-delete-form h1 {
+  font-size: 1.5rem !important;
+}
 /*# sourceMappingURL=style.css.map */

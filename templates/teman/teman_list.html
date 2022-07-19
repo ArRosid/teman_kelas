@@ -1,11 +1,11 @@
 {% extends "./base.html" %} {% block content %}
-<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-between pt-5">
     <h1>List Teman Kelas</h1>
     <a href="{% url 'tambah_teman' %}" class="btn btn-success rounded-xl h-fit"
         ><i class="bi-plus"></i> Tambah Teman</a
     >
 </div>
-<div class="card-list mt-5">
+<div class="card-list my-5">
     <div class="row row-cols-1 row-cols-md-3 g-4">
         {% for object in object_list %}
         <div class="col">
