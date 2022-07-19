@@ -1,10 +1,26 @@
-<form method="POST" enctype="multipart/form-data">
- 
-    <!-- Security token -->
-    {% csrf_token %}
- 
-    <!-- Using the formset -->
-    {{ form.as_p }}
-     
-    <input type="submit" value="Submit">
-</form>
+{% extends "./base.html" %} {% block content %}
+<div class="add-friend justify-content-center">
+    <div class="align-self-center w-fit">
+        <a href="/" class="back-link mb-3"
+            ><i class="bi-arrow-left"></i> Kembali</a
+        >
+        <form
+            method="POST"
+            enctype="multipart/form-data"
+            class="add-friend-form"
+        >
+            <h1 class="mb-2">Tambah Teman</h1>
+            <!-- Security token -->
+            {% csrf_token %}
+
+            <!-- Using the formset -->
+            {{ form.as_p }}
+
+            <button type="submit" class="btn btn-lg btn-success w-100 mt-4">
+                Simpan
+            </button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

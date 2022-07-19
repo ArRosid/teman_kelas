@@ -1,7 +1,18 @@
+* {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 .h-fit {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .content {
@@ -10,7 +21,7 @@
 }
 
 .content h1 {
-  font-size: 2rem !important;
+  font-size: 1.8rem !important;
 }
 
 .content .card-list .card {
@@ -90,5 +101,68 @@
 
 .content .confirm-delete-form h1 {
   font-size: 1.5rem !important;
+}
+
+.content .add-friend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.content .add-friend .back-link {
+  color: #333;
+  display: block;
+  font-weight: 500;
+  opacity: 0.9;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.content .add-friend .back-link:hover i {
+  margin-right: 3px;
+}
+
+.content .add-friend .back-link i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.content .add-friend-form {
+  background: #fff;
+  border-radius: 12px;
+  margin: auto;
+  padding: 40px 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.content .add-friend-form h1 {
+  font-size: 1.5rem !important;
+  text-align: center;
+}
+
+.content .add-friend-form label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.content .add-friend-form input,
+.content .add-friend-form textarea {
+  border: 1px solid #adb2c0;
+  border-radius: 8px;
+  max-height: 140px;
+  padding: 10px 16px;
+  width: 100%;
+}
+
+.content .add-friend-form input:focus,
+.content .add-friend-form textarea:focus {
+  background: #f7f9ff;
+  border: 1px solid #a2a9bd;
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */
