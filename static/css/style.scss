@@ -1,0 +1,46 @@
+.content {
+    background: #e9edf0;
+    min-height: 100vh;
+    .card-list {
+        .card {
+            border: none;
+            border-radius: 12px;
+            flex-direction: row;
+            padding: 14px;
+            img {
+                border: 1px solid #eee;
+                border-radius: 100px;
+                height: 120px;
+                margin: auto;
+                margin-left: 24px;
+                object-fit: cover;
+                object-position: center center;
+                width: 120px;
+            }
+            &-text {
+                line-height: 18px;
+                margin-bottom: 2px;
+                span {
+                    font-size: 12px;
+                    opacity: 0.7;
+                }
+            }
+            .btn-delete {
+                background: rgba(220, 20, 60, 0.1);
+                border-radius: 50px;
+                color: crimson;
+                display: flex;
+                font-size: 20px;
+                justify-content: center;
+                padding: 6px;
+                position: absolute;
+                right: 14px;
+                top: 14px;
+                width: 42px;
+                &:hover {
+                    background: rgba(220, 20, 60, 0.2);
+                }
+            }
+        }
+    }
+}
