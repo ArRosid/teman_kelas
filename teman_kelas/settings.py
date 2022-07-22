@@ -145,3 +145,4 @@ AWS_ACCESS_KEY_ID = env.str("AWS_ACCESS_KEY_ID")
 AWS_SECRET_ACCESS_KEY = env.str("AWS_SECRET_ACCESS_KEY")
 AWS_STORAGE_BUCKET_NAME = env.str("AWS_STORAGE_BUCKET_NAME")
 DEFAULT_FILE_STORAGE = 'teman_kelas.storage_backends.MediaStorage'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
