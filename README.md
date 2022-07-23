@@ -4,7 +4,7 @@ Project Untuk kelas AWS Arsitek di www.agunacourse.com
 # Cara menjalankan project
 - sudo yum install git gcc mysql-devel python3-devel -y
 
-git clone https://github.com/ArRosid/teman_kelas.git
+- git clone https://github.com/ArRosid/teman_kelas.git
 - cd teman_kelas
 
 - pip3 install virtualenv
