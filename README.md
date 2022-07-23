@@ -26,7 +26,8 @@ sudo yum clean metadata
 sudo yum install nginx
 
 sudo nano /etc/nginx/conf.d/django.conf
-```upstream django {
+```
+upstream django {
     server unix:///run/uwsgi/teman_kelas.sock;
 }
 
@@ -44,7 +45,8 @@ server {
         uwsgi_pass  django;
         include     /etc/nginx/uwsgi_params;
     }
-}```
+}
+```
 
 sudo cp static /usr/share/nginx/html/ -rf
 sudo systemctl restart nginx
@@ -59,7 +61,8 @@ uwsgi --socket /run/uwsgi/teman_kelas.sock --chdir /home/ec2-user/teman_kelas/ -
 sudo mkdir -p /etc/uwsgi/sites
 sudo nano /etc/uwsgi/sites/teman_kelas.ini
 
-```[uwsgi]
+```
+[uwsgi]
 chdir = /home/ec2-user/teman_kelas/
 module = teman_kelas.wsgi
 home = /home/ec2-user/teman_kelas/venv/
@@ -67,11 +70,13 @@ master = true
 processes = 10
 socket = /run/uwsgi/teman_kelas.sock
 chmod-socket = 666
-vacuum = true```
+vacuum = true
+```
 
 
 sudo nano /etc/systemd/system/teman_kelas.service
-```[Unit]
+```
+[Unit]
 Description=Teman Kelas Emperor service
 
 [Service]
@@ -83,7 +88,8 @@ Type=notify
 NotifyAccess=all
 
 [Install]
-WantedBy=multi-user.target```
+WantedBy=multi-user.target
+```
 
 sudo systemctl start teman_kelas
 sudo systemctl enable teman_kelas
